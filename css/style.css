@@ -284,7 +284,7 @@ a:hover {
 .offer__form-wrap {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -17.5rem;
+  margin-top: -19.8rem;
 }
 .form-wrap {
   max-width: 100%;
@@ -320,7 +320,13 @@ a:hover {
   width: 100%;
 }
 .form__label-checkbox {
+  position: relative;
   margin: 0px 2.5rem 0px 2rem;
+  border: 1px solid black;
+}
+.form__label-checkbox::before {
+  content: "";
+  position: ;
 }
 .form__input {
   margin: 1.8rem 0px;
