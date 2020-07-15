@@ -75,9 +75,44 @@
     <!-- /.container -->
     </section>
     <!-- /.main -->
+
     <section class="offer">
       <div class="container">
-        
+        <div class="form-wrap offer__form-wrap">
+          <h2 class="form-wrap__title">Оставьте заявку на расчет</h2>
+          <span class="form-wrap__subtitle">И получите скидку 30% на изготовление скинали или фартука для кухни</span>
+             <form class="form-wrap__form" action="#" method="POST">
+              <div class="form-wrap__row">
+                <label class="form-wrap__label">Вид стекла
+                  <select class="input" name="print">
+                    <option value="С печатью" selected>С печатью</option>
+                    <option value="Без печати">Без печати</option>
+                  </select>
+                </label>
+                <label class="form-wrap__label">Ширина, см
+                  <input class="input" type="text" name="width">
+                </label>
+                <label class="form-wrap__label">Высота, см
+                  <input class="input" type="text" name="height">
+                </label>
+              </div>
+              <!-- /.form-wrap__row -->
+              <div class="form-wrap__row">
+                <label class="form-wrap__label" for="mount">Монтаж</label>
+                <input class="input" id="mount" type="checkbox" value="Монтаж">
+                <label class="form-wrap__label" for="delivery">Доставка</label>
+                <input class="input" id="delivery" type="checkbox" value="Доставка">
+              </div>
+              <!-- /.form-wrap__row -->
+              <div class="form-wrap__row">
+                <input class="input" type="text" name="user_name" placeholder="Ваше имя">
+                <input class="input" type="tel" name="user_phone" placeholder="Ваш телефон">
+                <input class="input" type="submit" value="Получить скидку">
+              </div>
+              <!-- /.form-wrap__row -->
+             </form>
+        </div>
+        <!-- /.wrap offer__wrap -->
       </div>
       <!-- /.container -->
     </section>
