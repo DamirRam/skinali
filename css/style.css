@@ -97,6 +97,17 @@ a:hover {
   background-color: #3866c7;
   transition: 0.3s;
 }
+/* стилизация input */
+.input {
+  width: 100%;
+  padding: 3rem 2.5rem;
+  height: 8rem;
+  border: 1px solid #dddddd;
+  border-right-width: 0px;
+}
+.input_right-border {
+  border-right-width: 1px;
+}
 /* шапка сайта и меню сайта */
 .menu {
   position: fixed;
@@ -227,7 +238,7 @@ a:hover {
   height: 690px;
   color: #000000;
   background: url(../img/main/main-bg.jpg) top center no-repeat;
-  background-size: 100%;
+  background-size: cover;
   background-color: #f1f1f1;
 }
 .main__title {
@@ -263,4 +274,59 @@ a:hover {
     background: url(../img/main/main-bg-xs.jpg) 43% 0% no-repeat;
     background-size: cover;
   }
+}
+/* Оставьте заявку на расчет */
+.offer {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-color: #f1f1f1;
+}
+.offer__form-wrap {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -17.5rem;
+}
+.form-wrap {
+  max-width: 100%;
+  padding: 6rem 7rem;
+  font-size: 1.7rem;
+  color: #000000;
+  background: url(../img/offer/bg-offer.png) right center no-repeat;
+  background-color: #ffffff;
+  background-size: contain;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
+}
+.form-wrap__title {
+  margin-top: 0px;
+  margin-bottom: 3.5rem;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+.form-wrap__subtitle {
+  font-size: 2.1rem;
+}
+.form {
+  margin-top: 5rem;
+}
+.form__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.form__label {
+  display: block;
+  width: 100%;
+}
+.form__label-checkbox {
+  margin: 0px 2.5rem 0px 2rem;
+}
+.form__input {
+  margin: 1.8rem 0px;
+}
+.form__button {
+  margin: 1.8rem 0px;
+  border: none;
+  border-left: 1px solid #dddddd;
 }
