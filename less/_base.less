@@ -1,0 +1,59 @@
+/* базовые настройки */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+body {
+  .light;
+}
+a, button, input, textarea, select {
+  outline: none;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+a:hover {
+  text-decoration: none;
+}
+/* контейнер для контента */
+.container {
+  max-width: 1170px;
+  margin: 0px auto;
+}
+@media(max-width: 1200px) {
+  .container{
+    max-width: 970px;
+  }
+}
+@media(max-width: 992px) {
+  html{
+    font-size: 8px;
+  }
+  .container{
+    max-width: 750px;
+  }
+}
+@media(max-width: 768px) {
+  .container{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+/* кнопки */
+.button {
+  display: inline-block;
+  padding: 2.3rem 4.3rem;
+  .regular(700);
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: @text-light;
+  background-color: @btn-color;
+  border: none;
+  &:hover {
+    background-color: @btn-color_hover;
+    transition: 0.3s;
+  }
+}
