@@ -5,7 +5,7 @@
   &__form-wrap {
       margin-left: auto;
       margin-right: auto;
-      margin-top: -17.5rem;
+      margin-top: -19.8rem;
   }
 }
 .form-wrap {
@@ -39,9 +39,6 @@
     display: block;
     width: 100%;
   }
-  &__label-checkbox{
-    margin: 0px 2.5rem 0px 2rem;
-  }
   &__input{
     margin: 1.8rem 0px;
   }
@@ -51,4 +48,25 @@
     border-left: 1px solid #dddddd;
   }
 }
-
+.checkbox{
+  margin-left: 0.7rem;
+  opacity: 0;
+    &:checked +.label-checkbox::before{
+      background: url(../img/offer/mark.svg) center center no-repeat;
+    }
+}
+.label-checkbox{
+  position: relative;
+  margin: 0px 2.5rem 0px 2rem;
+  user-select: none;
+  &::before{
+    content:"";
+    position: absolute;
+    left: -4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #dddddd;
+  }
+}
