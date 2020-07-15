@@ -63,8 +63,10 @@ a:hover {
   padding: 3rem 2.5rem;
   height: 8rem;
   border: 1px solid #dddddd;
-  border-right-width: 0px;
-  &_right-border{
-    border-right-width: 1px;
+}
+@media(max-width: 480px) {
+  .input {
+    padding: 2rem 2rem;
+    height: 6rem;
   }
 }

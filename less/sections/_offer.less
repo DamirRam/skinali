@@ -39,34 +39,89 @@
     display: block;
     width: 100%;
   }
-  &__input{
+  &__input {
     margin: 1.8rem 0px;
+    border-right-width: 0px;
+    &_right-border {
+      border-right-width: 1px;
+    }
   }
-  &__button{
+  &__button {
     margin: 1.8rem 0px;
     border: none;
     border-left: 1px solid #dddddd;
+    box-shadow: none;
+  }
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+      &:checked +.form__label-checkbox::before{
+        background: url(../img/offer/mark.svg) center center no-repeat;
+      }
+  }
+  &__label-checkbox {
+    position: relative;
+    margin: 0px 4rem 0px 4rem;
+    user-select: none;
+    &::before{
+      content:"";
+      position: absolute;
+      left: -4rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2.5rem;
+      height: 2.5rem;
+      border: 1px solid #dddddd;
+    }
   }
 }
-.checkbox{
-  margin-left: 0.7rem;
-  opacity: 0;
-    &:checked +.label-checkbox::before{
-      background: url(../img/offer/mark.svg) center center no-repeat;
-    }
+@media (max-width: 1200px) {
+  .form-wrap {
+    background-position: 115% 0%;
+  }
 }
-.label-checkbox{
-  position: relative;
-  margin: 0px 2.5rem 0px 2rem;
-  user-select: none;
-  &::before{
-    content:"";
-    position: absolute;
-    left: -4rem;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 2.5rem;
-    height: 2.5rem;
-    border: 1px solid #dddddd;
+@media (max-width: 992px) {
+  .form-wrap {
+    background-position: 120% 0%;
+  }
+}
+@media (max-width: 768px) {
+  .form-wrap {
+    padding: 5rem 6rem;
+    background-image: none;
+    &__title{
+      margin-bottom: 2rem;
+    }
+  }
+  .form {
+    margin-top: 2.5rem;
+    &__row {
+      flex-direction: column;
+      &_row {
+        flex-direction: row;
+      }
+    }
+    &__input {
+      margin: 1.2rem 0px;
+      border: 1px solid #dddddd;
+    }
+    &__button {
+      margin: 1.2rem 0px;
+    }
+  }
+}
+@media(max-width: 480px) {
+  .form-wrap {
+    padding: 4rem 2rem 2rem 2rem;
+    &__title {
+      font-size: 2rem;
+      text-align: center;
+    }
+    &__subtitle {
+      display: inline-block;
+      font-size: 2rem;
+      text-align: center;
+    }
   }
 }

@@ -90,23 +90,23 @@
                   </select>
                 </label>
                 <label class="form__label">Ширина, см
-                  <input class="input form__input" type="text" name="width">
+                  <input class="input form__input" type="text" name="width" required>
                 </label>
                 <label class="form__label">Высота, см
-                  <input class="input input_right-border form__input" type="text" name="height">
+                  <input class="input form__input form__input_right-border" type="text" name="height" required>
                 </label>
               </div>
               <!-- /.form-wrap__row -->
-              <div class="form__row">
-                <input class="checkbox" id="mount" type="checkbox" value="Монтаж" name="mount">
-                <label class="label-checkbox" for="mount">Монтаж</label>
-                <input class="checkbox" id="delivery" type="checkbox" value="Доставка" name="delivery">
-                <label class="label-checkbox" for="delivery">Доставка</label>
+              <div class="form__row form__row_row">
+                <input class="form__checkbox" id="mount" type="checkbox" value="Монтаж" name="mount">
+                <label class="form__label-checkbox" for="mount">Монтаж</label>
+                <input class="form__checkbox" id="delivery" type="checkbox" value="Доставка" name="delivery">
+                <label class="form__label-checkbox" for="delivery">Доставка</label>
               </div>
               <!-- /.form-wrap__row -->
               <div class="form__row">
-                <input class="input form__input" type="text" name="user_name" placeholder="Ваше имя">
-                <input class="input form__input" type="tel" name="user_phone" placeholder="Ваш телефон">
+                <input class="input form__input" type="text" name="user_name" placeholder="Ваше имя" required>
+                <input class="input form__input" type="tel" name="user_phone" placeholder="Ваш телефон" required>
                 <input class="input button form__button" type="submit" value="Получить скидку">
               </div>
               <!-- /.form-wrap__row -->
