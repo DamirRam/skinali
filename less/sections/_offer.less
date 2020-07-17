@@ -32,8 +32,8 @@
   margin-top: 5rem;
   &__row {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
+    max-width: 900px;
   }
   &__label {
     display: block;
@@ -64,6 +64,9 @@
     position: relative;
     margin: 0px 4rem 0px 4rem;
     user-select: none;
+    &:hover{
+      cursor: url(../img/offer/cursor-link.png), pointer;
+    }
     &::before{
       content:"";
       position: absolute;

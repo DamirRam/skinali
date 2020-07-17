@@ -314,8 +314,8 @@ a:hover {
 }
 .form__row {
   display: flex;
-  justify-content: flex-start;
   align-items: center;
+  max-width: 900px;
 }
 .form__label {
   display: block;
@@ -347,6 +347,9 @@ a:hover {
   margin: 0px 4rem 0px 4rem;
   -webkit-user-select: none;
           user-select: none;
+}
+.form__label-checkbox:hover {
+  cursor: url(../img/offer/cursor-link.png), pointer;
 }
 .form__label-checkbox::before {
   content: "";
