@@ -23,24 +23,16 @@ a:hover {
   max-width: 1170px;
   margin: 0px auto;
 }
-@media(max-width: 1200px) {
-  .container{
-    max-width: 970px;
-  }
+/* класс для секций */
+.section {
+  padding: 10rem 0px;
+  text-align: center;
 }
-@media(max-width: 992px) {
-  html{
-    font-size: 8px;
-  }
-  .container{
-    max-width: 750px;
-  }
-}
-@media(max-width: 768px) {
-  .container{
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+/* заголовки секций*/
+.section-title{
+  .bold(700);
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 /* кнопки */
 .button {
@@ -64,9 +56,35 @@ a:hover {
   height: 8rem;
   border: 1px solid #dddddd;
 }
+/* медиа запросы */
+@media(max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media(max-width: 992px) {
+  html{
+    font-size: 8px;
+  }
+  .container {
+    max-width: 750px;
+  }
+}
+@media(max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section{
+    padding: 8rem 0rem;
+  }
+}
 @media(max-width: 480px) {
   .input {
     padding: 2rem 2rem;
     height: 6rem;
+  }
+  .section-title{
+    font-size: 2.8rem;
   }
 }

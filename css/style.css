@@ -62,24 +62,17 @@ a:hover {
   max-width: 1170px;
   margin: 0px auto;
 }
-@media (max-width: 1200px) {
-  .container {
-    max-width: 970px;
-  }
+/* класс для секций */
+.section {
+  padding: 10rem 0px;
+  text-align: center;
 }
-@media (max-width: 992px) {
-  html {
-    font-size: 8px;
-  }
-  .container {
-    max-width: 750px;
-  }
-}
-@media (max-width: 768px) {
-  .container {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+/* заголовки секций*/
+.section-title {
+  font-family: 'Proxima Nova Bold', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 /* кнопки */
 .button {
@@ -104,10 +97,36 @@ a:hover {
   height: 8rem;
   border: 1px solid #dddddd;
 }
+/* медиа запросы */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .section {
+    padding: 8rem 0rem;
+  }
+}
 @media (max-width: 480px) {
   .input {
     padding: 2rem 2rem;
     height: 6rem;
+  }
+  .section-title {
+    font-size: 2.8rem;
   }
 }
 /* шапка сайта и меню сайта */
@@ -408,5 +427,39 @@ a:hover {
     display: inline-block;
     font-size: 2rem;
     text-align: center;
+  }
+}
+/* Наши преимущества */
+.feature__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.feature__block {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+  width: 33.33%;
+}
+.feature__image {
+  margin-bottom: 3.4rem;
+}
+.feature__text {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+}
+@media (max-width: 768px) {
+  .feature__block {
+    margin-top: 6rem;
+    width: 50%;
+  }
+}
+@media (max-width: 480px) {
+  .feature__block {
+    margin-top: 6rem;
+    width: 100%;
   }
 }
