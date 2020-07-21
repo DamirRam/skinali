@@ -27,12 +27,12 @@ a:hover {
 .section {
   padding: 10rem 0px;
   text-align: center;
-}
 /* заголовки секций*/
-.section-title{
+  &__title{
   .bold(700);
   font-size: 3rem;
   text-transform: uppercase;
+  }
 }
 /* кнопки */
 .button {
@@ -84,7 +84,9 @@ a:hover {
     padding: 2rem 2rem;
     height: 6rem;
   }
-  .section-title{
-    font-size: 2.8rem;
+  .section{
+&__title{
+  font-size: 2.8rem;
   }
+}
 }

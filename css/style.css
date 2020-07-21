@@ -66,9 +66,9 @@ a:hover {
 .section {
   padding: 10rem 0px;
   text-align: center;
+  /* заголовки секций*/
 }
-/* заголовки секций*/
-.section-title {
+.section__title {
   font-family: 'Proxima Nova Bold', sans-serif;
   font-weight: 700;
   font-size: 3rem;
@@ -125,7 +125,7 @@ a:hover {
     padding: 2rem 2rem;
     height: 6rem;
   }
-  .section-title {
+  .section__title {
     font-size: 2.8rem;
   }
 }
@@ -437,7 +437,7 @@ a:hover {
 }
 .feature__block {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   flex-direction: column;
   align-items: center;
   margin-top: 10rem;
@@ -461,5 +461,129 @@ a:hover {
   .feature__block {
     margin-top: 6rem;
     width: 100%;
+  }
+}
+/* Каталог скинали */
+.catalog {
+  background-color: #f5f6f8;
+}
+.catalog__wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+}
+.catalog__block {
+  position: relative;
+  max-width: 570px;
+  min-width: 280px;
+  flex-basis: 50%;
+  min-height: 100px;
+  margin-bottom: 3rem;
+  box-shadow: 6.553px 4.589px 21px 0px rgba(0, 0, 0, 0.1);
+}
+.catalog__btn-wrap {
+  margin-top: 2.5rem;
+}
+.catalog__text {
+  display: block;
+  margin-top: 2.5rem;
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+.item {
+  color: #ffffff;
+}
+.item__margin_right {
+  margin-right: 3rem;
+}
+.item__task {
+  position: absolute;
+  top: 1.1rem;
+  left: 1.1rem;
+  padding: 1.1rem;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  background-color: rgba(80, 127, 225, 0.6);
+}
+.item__img {
+  width: 100%;
+  height: 100%;
+}
+.item__btn-wrap {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: bottom;
+}
+.item__button {
+  height: 2.9rem;
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+  background-color: #6a99e9;
+  color: #ffffff;
+}
+.item__button:hover {
+  cursor: url(../img/offer/cursor-link.png), pointer;
+}
+.item__try {
+  width: 14rem;
+}
+.item__try:hover {
+  transition: 0.3s;
+  background-color: #ffffff;
+  color: #6a99e9;
+}
+.item__order {
+  width: 7.5rem;
+}
+.item__order:hover {
+  transition: 0.3s;
+  background-color: #ffffff;
+  color: #6a99e9;
+}
+.item__like {
+  position: relative;
+  width: 3rem;
+  background-color: #507fe1;
+}
+.item__like:hover {
+  background-color: #3866c7;
+}
+.item__like-img {
+  width: 1.4rem;
+  height: 1.4rem;
+  line-height: 3rem;
+  vertical-align: middle;
+}
+@media (max-width: 1200px) {
+  .catalog__block {
+    flex-basis: 48.3%;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__block {
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 480px) {
+  .item__task {
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    padding: 0.5rem;
+  }
+  .item__button {
+    height: 2.5rem;
   }
 }
