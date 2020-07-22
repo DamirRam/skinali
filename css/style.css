@@ -56,6 +56,7 @@ select:focus {
 }
 a:hover {
   text-decoration: none;
+  cursor: url(../img/offer/cursor-link.png), pointer;
 }
 /* контейнер для контента */
 .container {
@@ -478,7 +479,7 @@ a:hover {
   max-width: 570px;
   min-width: 280px;
   flex-basis: 50%;
-  min-height: 100px;
+  min-height: 110px;
   margin-bottom: 3rem;
   box-shadow: 6.553px 4.589px 21px 0px rgba(0, 0, 0, 0.1);
 }
@@ -502,7 +503,7 @@ a:hover {
   position: absolute;
   top: 1.1rem;
   left: 1.1rem;
-  padding: 1.1rem;
+  padding: 0.8rem;
   font-family: 'Proxima Nova Regular', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
@@ -585,5 +586,75 @@ a:hover {
   }
   .item__button {
     height: 2.5rem;
+  }
+}
+/* Полезное или что важно знать */
+.useful__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 7rem;
+}
+.useful__title {
+  font-family: 'Proxima Nova Regular', sans-serif;
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+.useful__link {
+  font-size: 1.6rem;
+  color: #507fe1;
+  text-decoration: underline;
+}
+.useful__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.useful__block {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+.useful__block-wrap {
+  width: 285px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.08);
+}
+.useful__img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.useful__text-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+}
+.useful__text {
+  font-family: 'Proxima Nova Light', sans-serif;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+@media (max-width: 1200px) {
+  .useful__block {
+    flex-basis: 50%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .useful__header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .useful__block {
+    flex-basis: 100%;
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 480px) {
+  .useful__block-wrap {
+    width: 280px;
   }
 }

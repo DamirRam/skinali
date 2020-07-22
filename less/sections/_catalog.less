@@ -11,14 +11,14 @@
     max-width: 570px;
     min-width: 280px;
     flex-basis: 50%;
-    min-height: 100px;
+    min-height: 110px;
     margin-bottom: 3rem;
     box-shadow: 6.553px 4.589px 21px 0px rgba(0, 0, 0, 0.1);
   }
-  &__btn-wrap{
+  &__btn-wrap {
     margin-top: 2.5rem;
   }
-  &__text{
+  &__text {
     display: block;
     margin-top: 2.5rem;
     .light;
@@ -27,14 +27,14 @@
 }
 .item {
   color: @text-light;
-  &__margin_right{
+  &__margin_right {
     margin-right: 3rem;
   }
   &__task {
     position: absolute;
     top: 1.1rem;
     left: 1.1rem;
-    padding: 1.1rem;
+    padding: 0.8rem;
     .regular(700);
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -60,13 +60,13 @@
     border: none;
     background-color: @btn-catalog;
     color: @text-light;
-    &:hover{
+    &:hover {
       cursor: url(../img/offer/cursor-link.png), pointer;
     }
   }
   &__try {
     width: 14rem;
-    &:hover{
+    &:hover {
       transition: 0.3s;
       background-color: @text-light;
       color: @btn-catalog
@@ -74,16 +74,17 @@
   }
   &__order {
     width: 7.5rem;
-    &:hover{
+    &:hover {
       transition: 0.3s;
       background-color: @text-light;
       color: @btn-catalog
-    }}
+    }
+  }
   &__like {
     position: relative;
     width: 3rem;
     background-color: @btn-color;
-    &:hover{
+    &:hover {
       background-color: @btn-color_hover;
     }
   }
@@ -95,15 +96,15 @@
   }
 }
 @media(max-width: 1200px) {
-  .catalog{
-    &__block{
+  .catalog {
+    &__block {
       flex-basis: 48.3%;
     }
   }
 }
 @media(max-width: 768px) {
-  .catalog{
-    &__block{
+  .catalog {
+    &__block {
       flex-basis: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -120,7 +121,6 @@
     }
     &__button {
       height: 2.5rem;
-
     }
   }
 }
