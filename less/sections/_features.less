@@ -10,6 +10,15 @@
     flex-direction: column;
     align-items: center;
     width: 33.33%;
+    &:nth-child(4){
+      margin-top: 10rem;
+    }
+    &:nth-child(5){
+      margin-top: 10rem;
+    }
+    &:nth-child(6){
+      margin-top: 10rem;
+    }
   }
   &__image{
     margin-bottom: 3.4rem;
@@ -24,13 +33,24 @@
     &__block{
       margin-top: 6rem;
       width: 50%;
+      &:first-child {
+        margin-top: 0rem;
+      }
+      &:nth-child(4){
+        margin-top: 6rem;
+      }
+      &:nth-child(5){
+        margin-top: 6rem;
+      }
+      &:nth-child(6){
+        margin-top: 6rem;
+      }
     }
   }
 }
 @media(max-width: 480px) {
   .feature{
     &__block{
-      margin-top: 6rem;
       width: 100%;
     }
   }
