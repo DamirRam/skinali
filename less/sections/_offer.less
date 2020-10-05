@@ -9,13 +9,21 @@
   }
 }
 .form-wrap {
+  &_bg-one {
+    background: url(../img/offer/bg-offer-one.png) right center no-repeat;
+    background-size: contain;
+    background-color: @bg-light;
+  }
+  &_bg-two {
+    margin-top: -26.8rem;
+    background: url(../img/offer/bg-offer-two.png) right center no-repeat;
+    background-size: contain;
+    background-color: @bg-light;
+  }
   max-width: 100%;
   padding: 6rem 7rem;
   font-size: 1.7rem;
   color: @text-dark;
-  background: url(../img/offer/bg-offer.png) right center no-repeat;
-  background-color: @bg-light;
-  background-size: contain;
   box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
   &__title {
     margin-top: 0px;
@@ -26,6 +34,10 @@
   }
   &__subtitle {
     font-size: 2.1rem;
+    &_max-width {
+      display: inline-block;
+      width: 83.5rem;
+    }
   }
 }
 .form {
@@ -48,6 +60,7 @@
   }
   &__button {
     margin: 1.8rem 0px;
+    max-width: 30rem;
     border: none;
     border-left: 1px solid #dddddd;
     box-shadow: none;
@@ -78,15 +91,45 @@
       border: 1px solid #dddddd;
     }
   }
+  &__policy {
+    margin-left: 4.5rem;
+    &_max-width {
+      max-width: 36rem;
+    }
+  }
 }
 @media (max-width: 1200px) {
   .form-wrap {
-    background-position: 115% 0%;
+    &_bg-one,&_bg-two {
+      background-position: 115% 0%;
+    }
+    &__subtitle {
+      &_max-width {
+        max-width: 71rem;
+      }
+    }
+  }
+  .form {
+  &__policy {
+    &_max-width {
+      max-width: 27rem;
+      }
+    }
+  &__button {
+    max-width: 27.7rem;
+  }
   }
 }
 @media (max-width: 992px) {
   .form-wrap {
-    background-position: 120% 0%;
+    &_bg-one,&_bg-two {
+      background-position: 120% 0%;
+    }
+  }
+  .form {
+  &__button {
+    max-width: 26.6rem;
+  }
   }
 }
 @media (max-width: 768px) {
@@ -95,6 +138,11 @@
     background-image: none;
     &__title{
       margin-bottom: 2rem;
+    }
+    &__subtitle {
+      &_max-width {
+        max-width: 100%;
+      }
     }
   }
   .form {
@@ -112,6 +160,13 @@
     &__button {
       margin: 1.2rem 0px;
     }
+    &__policy {
+      margin-left: 0px;
+      text-align: center;
+      &_max-width {
+        max-width: 100%;
+      }
+    }
   }
 }
 @media(max-width: 480px) {
@@ -125,6 +180,11 @@
       display: inline-block;
       font-size: 2rem;
       text-align: center;
+    }
+  }
+  .form {
+    &__button {
+      max-width: 100%;
     }
   }
 }
