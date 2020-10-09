@@ -1,0 +1,31 @@
+.question {
+  padding: 8rem 0;
+  background-color: @bg-contacts;
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__title {
+    margin-right: 5.4rem;
+    font-size: 3rem;
+    .bold();
+  }
+  &__link {
+    font-size: 2.4rem;
+    color: #5a8de2;
+    border-bottom: 1px solid #5a8de2;
+  }
+}
+@media (max-width: 768px) {
+  .question {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__title {
+      margin: auto;
+      margin-bottom: 2rem;
+      flex-basis: 100%;
+    }
+  }
+}

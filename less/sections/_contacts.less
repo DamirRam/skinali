@@ -1,0 +1,31 @@
+.contacts {
+  padding-bottom: 5rem;
+  background-color: @bg-contacts;
+  &__wrap {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.contacts-block {
+  &__text {
+    display: block;
+    margin: auto;
+    margin-top: 2.5rem;
+    font-size: 1.6rem;
+    font-style: normal;
+    color: @text-dark;
+  }
+}
+@media(max-width: 480px) {
+  .contacts {
+    &__wrap {
+      flex-wrap: wrap;
+    }
+    &__block {
+      margin-bottom: 4rem;
+    }
+  }
+  .contacts-block {
+    flex-basis: 100%;
+  }
+}
