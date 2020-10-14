@@ -27,6 +27,14 @@
 }
 .item {
   color: @text-light;
+  overflow: hidden;
+  &:hover {
+    .item__btn-wrap {
+      opacity: 1;
+      transform: translateY(0%);
+      transition: all 0.3s;
+    }
+  }
   &__margin_right {
     margin-right: 3rem;
   }
@@ -50,7 +58,10 @@
     right: 0px;
     display: flex;
     justify-content: flex-end;
-    align-self: bottom;
+    background-color: @btn-catalog;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s;
   }
   &__button {
     height: 2.9rem;

@@ -21,7 +21,7 @@
   color: @text-light;
   }
 }
-.js-menu_active {
+.menu_active {
   z-index: 5;
   opacity: 1;
   transform: translateY(100%);
@@ -56,6 +56,7 @@
 }
 .menu-btn {
   &__button {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -66,12 +67,35 @@
     border-left: 1px solid #ede6f8;
     border-right: 1px solid #ede6f8;
     background-color: @bg-light;
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__line {
     margin-top: 5px;
     width: 2rem;
     height: 3px;
     background-color: #507fe1;
+    transition: all 0.3s;
+    &:nth-child(2){
+      opacity: 1;
+    }
+    &_active {
+      &:first-child {
+        position:absolute;
+        transform: rotate(-45deg);
+        transition: all 0.3s;
+      }
+      &:nth-child(2){
+        position: absolute;
+        opacity: 0;
+      }
+      &:last-child {
+        position:absolute;
+        transform: rotate(45deg);
+        transition: all 0.3s;
+      }
+    }
   }
 }
 .logo {
