@@ -19,4 +19,38 @@ $(window).load(function() {
     $(".menu").toggleClass("menu_active");
     $(".menu-btn__line").toggleClass("menu-btn__line_active");
   });
+  //select tag stylization
+  let select     = document.querySelector("select");
+  let option     = select.children;
+  let divText    = document.createElement("span");
+  let divSelect  = document.createElement("div");
+  let divOptWrap = document.createElement("div");
+
+  select.style.display="none";
+
+  divSelect.setAttribute("class", select.getAttribute("class")+" select");
+  divOptWrap.setAttribute("class", "select__wrap");
+  for(i=0;i<option.length;i++){
+    if(option[i].hasAttribute("selected")){
+      divText.innerHTML=option[i].innerHTML;
+    }else{
+      divText.innerHTML=option[0].innerHTML;
+    }
+    let spanOption = document.createElement("span");
+    spanOption.setAttribute("class", "select__option");
+    spanOption.innerHTML = option[i].innerHTML;
+    divOptWrap.appendChild(spanOption);
+  }
+  divSelect.appendChild(divText);
+  divSelect.appendChild(divOptWrap);
+  select.parentNode.appendChild(divSelect);
+
+  divSelect.onclick=function(){
+    divOptWrap.classList.toggle("select__wrap_active");
+    divSelect.classList.toggle("on");
+  };
+  divOptWrap.onclick=function(e){
+    divText.innerHTML=e.target.innerHTML;
+    select.value=e.target.innerHTML;
+  };
 });

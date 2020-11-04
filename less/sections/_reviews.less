@@ -5,7 +5,6 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 17rem;
-
   }
 }
 .review {
@@ -44,5 +43,27 @@
   }
   &__name {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 1200px) {
+  .review {
+    &__text {
+      max-width: 30rem;
+      min-height: 17rem;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .reviews {
+  &__wrap {
+    flex-wrap: wrap;
+  }
+}
+  .review {
+    width: 100%;
+    &__text {
+      min-height: auto;
+      max-width: 30rem;
+    }
   }
 }
