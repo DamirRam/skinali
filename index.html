@@ -39,7 +39,7 @@
           <a class="phone__description" href="mailto:">info@mail.cu</a>
         </div>
         <!-- /.phone -->
-        <button class="header__button header__button_hidden">Получить консультацию</button>
+        <a class="header__button header__button_hidden" href="#offer">Получить консультацию</a>
       </div>
       <!-- /.header-wrap -->
     </div>
@@ -50,13 +50,13 @@
   <nav class="menu">
     <div class="container">
       <div class="menu__wrap">
-        <a class="menu__link" href="#">Главная</a>
-        <a class="menu__link" href="#">Продукция</a>
-        <a class="menu__link" href="#">Каталог</a>
-        <a class="menu__link" href="#">Примеры Работ</a>
-        <a class="menu__link" href="#">Примерка Изображений</a>
-        <a class="menu__link" href="#">Стоимость Дилерам</a>
-        <a class="menu__link" href="#">О Скинали</a>
+        <a class="menu__link" href="#main">Главная</a>
+        <a class="menu__link" href="#factory">О проиводстве</a>
+        <a class="menu__link" href="#catalog">Каталог</a>
+        <a class="menu__link" href="#before">Примеры Работ</a>
+        <a class="menu__link" href="#catalog">Примерка Изображений</a>
+        <a class="menu__link" href="#price">Стоимость Дилерам</a>
+        <a class="menu__link" href="#useful">О Скинали</a>
       </div>
       <!-- /.menu__wrap -->
     </div>
@@ -66,17 +66,17 @@
 
   <main>
 
-    <section class="main">
+    <section class="main" id="main">
       <div class="container">
         <h1 class="main__title">Гарантия минимальной цены на скинали</h1>
         <strong class="main__price">от 3 000 р/м<sup>2</sup></strong>
-        <button class="main__button button">Заказать скинали</button>
+        <a href="#offer" class="main__button button">Заказать скинали</a>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.main -->
 
-    <section class="offer">
+    <section class="offer" id="offer">
       <div class="container">
         <div class="form-wrap offer__form-wrap form-wrap_bg-one">
           <h2 class="form-wrap__title">Оставьте заявку на расчет</h2>
@@ -90,10 +90,10 @@
                     </select>
                 </label>
                 <label class="form__label">Ширина, см
-                  <input class="input form__input" type="text" name="width" required>
+                  <input class="input form__input" type="number" name="width" required>
                 </label>
                 <label class="form__label">Высота, см
-                  <input class="input form__input form__input_right-border" type="text" name="height" required>
+                  <input class="input form__input form__input_right-border" type="number" name="height" required>
                 </label>
               </div>
               <!-- /.form-wrap__row -->
@@ -172,7 +172,7 @@
     </section>
     <!-- /.feature section -->
 
-    <section class="catalog section">
+    <section class="catalog section" id="catalog">
       <div class="container">
         <h2 class="section__title">КАТАЛОГ СКИНАЛИ</h2>
         <!-- /.section__title -->
@@ -269,12 +269,12 @@
     </section>
     <!-- /.catalog section -->
 
-    <section class="useful section">
+    <section class="useful section" id="useful">
       <div class="container">
         <div class="useful__header">
           <h3 class="useful__title">Полезное или что важно знать о скинали...</h3>
           <!-- /.useful__title -->
-          <a href="" class="useful__link">Читать все статьи</a>
+          <a href="#" class="useful__link">Читать все статьи</a>
         </div>
         <!-- /.useful__header -->
         <div class="useful__wrap">
@@ -341,7 +341,7 @@
     </section>
     <!-- /.useful section-->
 
-    <section class="price section">
+    <section class="price section" id="price">
       <div class="container">
         <h2 class="section__title">Цены и виды скинали</h2>
         <!-- /.section__title -->
@@ -354,7 +354,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -367,7 +367,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -380,7 +380,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -393,7 +393,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -406,7 +406,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -419,7 +419,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -432,7 +432,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -445,7 +445,7 @@
             </div>
             <!-- /.card__text-block -->
             <div class="card__button-block">
-              <button class="button card__button">Оставить заявку</button>
+              <a href="#offer" class="button card__button">Оставить заявку</a>
             </div>
             <!-- /.card__button-block -->
           </div>
@@ -517,7 +517,7 @@
     </section>
     <!-- /.work section -->
 
-    <section class="section before">
+    <section class="section before" id="before">
       <div class="container">
         <h2 class="section__title">До и после</h2>
         <!-- /.section__title -->
@@ -586,20 +586,20 @@
     </section>
     <!-- /.reviews -->
 
-    <section class="offer offer_light-bg">
+    <section class="offer offer_light-bg" id="offer">
       <div class="container">
         <div class="form-wrap offer__form-wrap form-wrap_bg-two">
           <h2 class="form-wrap__title">Ищите где дешевле и лучше?</h2>
           <span class="form-wrap__subtitle form-wrap__subtitle_max-width">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой</span>
              <form class="form" action="#" method="POST">
               <div class="form__row">
-                  <input class="input form__input" type="text" name="width" placeholder="Ваше имя" required>
-                  <input class="input form__input form__input_right-border" type="text" name="height" placeholder="Ваш телефон" required>
-                  <input class="input form__input form__input_right-border" type="text" name="height" placeholder="Ваша цена" required>
+                  <input class="input form__input" type="text" name="name" placeholder="Ваше имя" required>
+                  <input class="input form__input form__input_right-border" type="tel" name="phone" placeholder="Ваш телефон" required>
+                  <input class="input form__input form__input_right-border" type="number" name="price" placeholder="Ваша цена" required>
               </div>
               <!-- /.form-wrap__row -->
               <div class="form__row">
-                <input class="input button form__button" type="submit" value="Получить скидку">
+                <input class="input button form__button form__button_max-width" type="submit" value="Получить скидку">
                 <span class="form__policy form__policy_max-width">Ваши данные надежно защищены. Отправление заявки ни к чему не обязывает.</span>
               </div>
               <!-- /.form-wrap__row -->
@@ -611,7 +611,7 @@
     </section>
     <!-- /.offer -->
 
-    <section class="section factory">
+    <section class="section factory" id="factory">
       <div class="container">
         <h2 class="section__title">О производстве</h2>
         <!-- /.section__title -->
@@ -657,7 +657,7 @@
     <!-- /.contacts section -->
 
     <div class="map" id="map">
-      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa178798c51e577a8c8d62d1ffe70f2428de9b8bd69ebd5881ad8bb3d7baec834&amp;width=100%25&amp;height=410&amp;lang=ru_RU&amp;scroll=false"></script>
+      <script type="text/javascript" charset="utf-8" async ></script>
     </div>
     <!-- /.map -->
 
@@ -666,7 +666,7 @@
         <div class="question__wrap">
           <h2 class="question__title">Остались вопросы?</h2>
           <!-- /.question__title -->
-          <a href="question" class="question__link">Задайте их менеджеру</a>
+          <a href="question" class="question__link js-open-modal" data-modal="question">Задайте их менеджеру</a>
         </div>
         <!-- /.question__wrap -->
       </div>
@@ -717,12 +717,51 @@
   </footer>
   <!-- /.footer -->
 
+<!--   модальные окна -->
+<!-- задать вопрос -->
+  <div class="modal" data-modal="question">
+    <div class="modal__wrap">
+      <div class="modal__content">
+        <h2 class="modal__title">Задайте вопрос менеджеру</h2>
+        <!-- /.modal__title -->
+        <button class="modal__close js-close-modal"></button>
+        <form action="#" class="modal-form">
+          <input class="input modal-form__input" type="text" name="name" placeholder="Ваше имя">
+          <input class="input modal-form__input" type="tel" name="phone" placeholder="Ваш телефон">
+          <textarea class="input modal-form__textarea" name="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
+          <button class="button modal-form__button">Задать вопрос</button>
+        </form>
+        <!-- /.modal-form -->
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <!-- /.modal__wrap -->
+  </div>
+  <!-- /.modal -->
+
+<!--   Спасибо -->
+  <div class="modal" data-modal="thanks">
+    <div class="modal__wrap">
+      <div class="modal__content">
+        <h2 class="modal__title">Спасибо за заявку!</h2>
+        <!-- /.modal__title -->
+        <button class="modal__close js-thanks-close"></button>
+          <p class="modal__text">Наш менеджер свяжется с Вами в течение 15 минут.</p>
+        <!-- /.modal-form -->
+      </div>
+      <!-- /.modal__content -->
+    </div>
+    <!-- /.modal__wrap -->
+  </div>
+  <!-- /.modal -->
+
   <!-- Виджет обратной связи spikme -->
   <script type="text/javascript" src="https://spikmi.com/Widget?Id=3839"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/jquery.twentytwenty.js"></script>
   <script src="js/jquery.event.move.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/masked.input.min.js"></script>
   <script src="js/main.js"></script>
 
   </body>

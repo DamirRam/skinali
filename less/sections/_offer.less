@@ -63,10 +63,12 @@
   }
   &__button {
     margin: 1.8rem 0px;
-    max-width: 30rem;
     border: none;
     border-left: 1px solid #dddddd;
     box-shadow: none;
+    &_max-width {
+      max-width: 30rem;
+    }
   }
   &__checkbox {
     position: absolute;
@@ -131,7 +133,7 @@
     &_active {
       z-index: 10;
       visibility: visible;
-      height: 100px;
+      height: 10rem;
       transition: all 0.3s;
     }
   }
