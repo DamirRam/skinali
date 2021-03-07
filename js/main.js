@@ -83,6 +83,7 @@ $(window).load(function() {
     body.style.overflowY = "hidden";
     body.style.top = "-"+offsetTop+"px";
     body.style.right = scrollBarWidth+"px";
+    body.style.left = "0px";
     body.style.position = "fixed";
   };
 
@@ -197,5 +198,102 @@ let animClose = throttle(function animationClose (time, modalObj) {
     }
   }
   map();
+  //отправка форм на сервер
+  function ajaxPost(params, form) {
+    let request = new XMLHttpRequest ();
 
+    request.onreadystatechange = function () {
+      if(request.readyState == 4 && request.status ==200) {
+      let modal   = document.querySelector(".modal[data-modal='thanks']");
+      animOpen(modalAnimationTime, modal);
+      noScroll(modal);
+      
+      form.querySelector("input[name=user_name]").value = "";
+      form.querySelector("input[name=user_phone]").value = "";
+      if (form.classList.contains("js-question__form") == true) {
+        userMessage = form.querySelector("textarea[name=user_message]").value = "";
+      }
+      
+      if (form.classList.contains("js-main-form") === true) {
+        kindOfGlass = form.querySelector("select[name=print]").value = "";
+        glassWidth = form.querySelector("input[name=width]").value = "";
+        glassHeight = form.querySelector("input[name=height]").value = "";
+        
+        if(form.querySelector("input[name=delivery]").checked === true) {
+          delivery = "нужна";
+        }else {
+          delivery = "не нужна";
+        }
+        
+        if(form.querySelector("input[name=mount]").checked === true) {
+          mount = "нужен";
+        }else {
+          mount = "не нужен";
+        }
+      }
+
+      if (form.classList.contains("js-sale-form") === true) {
+        form.querySelector("input[name=price]").value = "";
+      }
+     }
+    }
+
+    request.open("POST" ,"../mailer/mail.php");
+    request.setRequestHeader("Content-Type" ,"application/x-www-form-urlencoded");
+    request.send(params);
+  }//end ajaxPost function
+
+  let forms = document.querySelectorAll("form");
+  for(let i=0; i<forms.length; i++) {
+    forms[i].addEventListener("submit", function (event) {
+      event.preventDefault();
+      let form        = event.target;
+      let userName    = form.querySelector("input[name=user_name]").value;
+      let userPhone   = form.querySelector("input[name=user_phone]").value;
+      let userMessage = "";
+      let kindOfGlass = "";
+      let glassWidth  = "";
+      let glassHeight = "";
+      let delivery    = "";
+      let mount       = "";
+      let price       = "";
+      let params      = "";
+
+      if (form.classList.contains("js-question__form") === true) {
+        userMessage = form.querySelector("textarea[name=user_message]").value;
+      }
+
+      if (form.classList.contains("js-main-form") === true) {
+        kindOfGlass = form.querySelector("select[name=print]").value;
+        glassWidth = form.querySelector("input[name=width]").value;
+        glassHeight = form.querySelector("input[name=height]").value;
+        if(form.querySelector("input[name=delivery]").checked === true) {
+          delivery = "нужна";
+        }else {
+          delivery = "";
+        }
+        if(form.querySelector("input[name=mount]").checked === true) {
+          mount = "нужен";
+        }else {
+          mount = "";
+        }
+      }
+
+      if (form.classList.contains("js-sale-form") === true) {
+        price = form.querySelector("input[name=price]").value;
+      }
+
+      params = "user_name="+userName+"&"+"user_phone="+userPhone+"&"+"user_message="+userMessage
+      +"&"+"kind_of_glass="+kindOfGlass+"&"+"glass_width="+glassWidth+"&"+"glass_height="+glassHeight
+      +"&"+"delivery="+delivery+"&"+"mount="+mount+"&"+"price="+price;
+
+      ajaxPost(params, form);
+
+      if(form.classList.contains("modal-form") === true) {
+      let modal = form.closest(".modal");
+      animClose(modalAnimationTime, modal);
+      scroll(form.closest(".modal"));
+      }
+    });//end addEventListener
+    }//end for
 });

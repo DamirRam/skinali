@@ -36,7 +36,7 @@
         <!-- /.phone -->
         <div class="phone phone_hidden">
           <a class="phone__link" href="tel:+74991234567">+7 499 123-45-67</a>
-          <a class="phone__description" href="mailto:">info@mail.cu</a>
+          <a class="phone__description" href="mailto:sales@skinali.ru">sales@skinali.ru</a>
         </div>
         <!-- /.phone -->
         <a class="header__button header__button_hidden" href="#offer">Получить консультацию</a>
@@ -81,7 +81,7 @@
         <div class="form-wrap offer__form-wrap form-wrap_bg-one">
           <h2 class="form-wrap__title">Оставьте заявку на расчет</h2>
           <span class="form-wrap__subtitle">и получите скидку 30% на изготовление скинали или фартука для кухни</span>
-             <form class="form" action="#" method="POST">
+             <form class="form js-main-form" action="mailer/mail.php" method="POST">
               <div class="form__row">
                 <label class="form__label">Вид стекла
                     <select class="input form__input" name="print">
@@ -182,7 +182,7 @@
             <img class="item__img" src="img/catalog/item-1.png" alt="Коллажи">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -192,7 +192,7 @@
             <img class="item__img" src="img/catalog/item-2.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -202,7 +202,7 @@
             <img class="item__img" src="img/catalog/item-3.png" alt="Коллажи">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -212,7 +212,7 @@
             <img class="item__img" src="img/catalog/item-4.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -222,7 +222,7 @@
             <img class="item__img" src="img/catalog/item-5.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -232,7 +232,7 @@
             <img class="item__img" src="img/catalog/item-6.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -242,7 +242,7 @@
             <img class="item__img" src="img/catalog/item-7.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -252,7 +252,7 @@
             <img class="item__img" src="img/catalog/item-8.png" alt="">
             <div class="item__btn-wrap">
               <button class="item__button item__try">Примерить онлайн</button>
-              <button class="item__button item__order">Заказать</button>
+              <button class="item__button item__order"><a class="item__link" href="#offer">Заказать</a></button>
               <button class="item__button item__like"><img class="item__like-img" src="img/catalog/heart.svg" alt="сердце"></button>
             </div>
           </div>
@@ -482,7 +482,7 @@
             <img class="work-block__img" src="img/work/work-3.png" alt="Договор">
             <h3 class="work-block__title">Договор</h3>
             <!-- /.work-block__title -->
-            <p class="work-block__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+            <p class="work-block__text">Мы заключаем договор на оказание услуг</p>
             <!-- /.work-block__text -->
           </div>
           <!-- /.work-block work__block -->
@@ -490,7 +490,7 @@
             <img class="work-block__img" src="img/work/work-4.png" alt="Дизайн">
             <h3 class="work-block__title">Дизайн</h3>
             <!-- /.work-block__title -->
-            <p class="work-block__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+            <p class="work-block__text">Наш дизайнер разрабатывает дизайн исходя из ваших предпочтений</p>
             <!-- /.work-block__text -->
           </div>
           <!-- /.work-block work__block -->
@@ -498,7 +498,7 @@
             <img class="work-block__img" src="img/work/work-5.png" alt="Производство">
             <h3 class="work-block__title">Производство</h3>
             <!-- /.work-block__title -->
-            <p class="work-block__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+            <p class="work-block__text">Мы производим скинали по дизайну </p>
             <!-- /.work-block__text -->
           </div>
           <!-- /.work-block work__block -->
@@ -506,7 +506,7 @@
             <img class="work-block__img" src="img/work/work-6.png" alt="Монтаж">
             <h3 class="work-block__title">Монтаж</h3>
             <!-- /.work-block__title -->
-            <p class="work-block__text">Вы оставляете заявку на нашем сайте или по телефону</p>
+            <p class="work-block__text">Мы приезжаем и производим монтаж скинали</p>
             <!-- /.work-block__text -->
           </div>
           <!-- /.work-block work__block -->
@@ -591,10 +591,10 @@
         <div class="form-wrap offer__form-wrap form-wrap_bg-two">
           <h2 class="form-wrap__title">Ищите где дешевле и лучше?</h2>
           <span class="form-wrap__subtitle form-wrap__subtitle_max-width">Если у Вас уже есть расчет от другой фирмы, но Вы хотите цену дешевле, укажите ее - и мы вам пересчитаем заказ с максимальной скидкой</span>
-             <form class="form" action="#" method="POST">
+             <form class="form js-sale-form" action="mailer/mail.php" method="POST">
               <div class="form__row">
-                  <input class="input form__input" type="text" name="name" placeholder="Ваше имя" required>
-                  <input class="input form__input form__input_right-border" type="tel" name="phone" placeholder="Ваш телефон" required>
+                  <input class="input form__input" type="text" name="user_name" placeholder="Ваше имя" required>
+                  <input class="input form__input form__input_right-border" type="tel" name="user_phone" placeholder="Ваш телефон" required>
                   <input class="input form__input form__input_right-border" type="number" name="price" placeholder="Ваша цена" required>
               </div>
               <!-- /.form-wrap__row -->
@@ -618,8 +618,8 @@
         <div class="factory-wrap factory__wrap">
           <img class="factory-wrap__image" src="img/factory/factory.jpg" alt="О производстве">
           <div class="factory-wrap__text">
-            <p class="factory-wrap__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-            <p class="factory-wrap__paragraph">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+            <p class="factory-wrap__paragraph">Обычное (сырое) стекло. Данный вид стекла используется крайне редко по той причине, что не отличается особой хрупкостью. Кроме этого, этот вид не очень устойчив к воздействию внешних факторов.</p>
+            <p class="factory-wrap__paragraph">Закаленное стекло. Данная разновидность существенно прочнее, чем обычное стекло. Этот вид способен выдержать серьезные температурные перепады. Это особенно важно, если панель будет установлена в качестве кухонного фартука возле плиты;</p>
           </div>
           <!-- /.factory-wrap__text -->
         </div>
@@ -646,7 +646,7 @@
           <!-- /.contacts-block -->
           <div class="contacts-block contacts__block">
             <img class="contacts-block__img" src="img/contacts/email.png" alt="Эмаил">
-            <span class="contacts-block__text">5404177@mail.ru</span>
+            <span class="contacts-block__text">sales@skinali.ru</span>
           </div>
           <!-- /.contacts-block -->
         </div>
@@ -666,7 +666,7 @@
         <div class="question__wrap">
           <h2 class="question__title">Остались вопросы?</h2>
           <!-- /.question__title -->
-          <a href="question" class="question__link js-open-modal" data-modal="question">Задайте их менеджеру</a>
+          <a href="question" class="question__link js-open-modal" data-modal="question__form">Задайте их менеджеру</a>
         </div>
         <!-- /.question__wrap -->
       </div>
@@ -695,7 +695,7 @@
         <!-- /.footer__block -->
         <div class="footer__block-contacts">
           <a class="footer__phone" href="tel:74991234567">+7 499 123-45-67</a>
-          <a class="footer__email" href="mailto:5404177@mail.ru">5404177@mail.ru</a>
+          <a class="footer__email" href="mailto:sales@skinali.ru">sales@skinali.ru</a>
           <div class="footer__social">
             <a class="footer__social-link" href="#">
               <img src="img/footer/twitter.png" alt="Twitter">
@@ -719,16 +719,16 @@
 
 <!--   модальные окна -->
 <!-- задать вопрос -->
-  <div class="modal" data-modal="question">
+  <div class="modal" data-modal="question__form">
     <div class="modal__wrap">
       <div class="modal__content">
         <h2 class="modal__title">Задайте вопрос менеджеру</h2>
         <!-- /.modal__title -->
         <button class="modal__close js-close-modal"></button>
-        <form action="#" class="modal-form">
-          <input class="input modal-form__input" type="text" name="name" placeholder="Ваше имя">
-          <input class="input modal-form__input" type="tel" name="phone" placeholder="Ваш телефон">
-          <textarea class="input modal-form__textarea" name="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
+        <form class="modal-form js-question__form" action="mailer/mail.php" method="POST">
+          <input class="input modal-form__input" type="text" name="user_name" placeholder="Ваше имя">
+          <input class="input modal-form__input" type="tel" name="user_phone" placeholder="Ваш телефон">
+          <textarea class="input modal-form__textarea" name="user_message" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
           <button class="button modal-form__button">Задать вопрос</button>
         </form>
         <!-- /.modal-form -->
@@ -745,7 +745,7 @@
       <div class="modal__content">
         <h2 class="modal__title">Спасибо за заявку!</h2>
         <!-- /.modal__title -->
-        <button class="modal__close js-thanks-close"></button>
+        <button class="modal__close js-close-modal"></button>
           <p class="modal__text">Наш менеджер свяжется с Вами в течение 15 минут.</p>
         <!-- /.modal-form -->
       </div>
